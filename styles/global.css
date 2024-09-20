@@ -1,0 +1,38 @@
+/*tudo que estiver no root é fornecido para toda a raiz da aplicação*/
+:root {
+    --background-primary: #000000; /*fundo*/
+    --text-light: #FFFFFF; /*letras*/
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73
+    --action-color: #2997FF; /*links*/
+}
+
+header {
+    background-color: var(--background-primary);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    
+    position: sticky; /*para a barra de navegação*/
+    top: 0;            /*continuar aparecendo mesmo*/
+    z-index: 1;      /*com o scroll*/
+}
+
+header nav ul {
+    margin: 0 auto; /*centraliza os elementos*/
+    width: fit-content;
+    display: flex; /*um fica ao lado do outro*/
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem; /*em cima = 0  e laterais = 2*/
+}
+
+header nav ul li{
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+
+    list-style: none;
+}
